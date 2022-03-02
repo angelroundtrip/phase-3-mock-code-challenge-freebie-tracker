@@ -10,7 +10,7 @@ class Freebie < ActiveRecord::Base
   
   # should return a string formatted as follows: {insert dev's name} owns a {insert freebie's item_name} from {insert company's name} - INSTANCE METHOD
   def print_details
-    binding.pry
+    # binding.pry
     "#{self.dev.name} owns a #{self.item_name} from #{self.company.name}"
   end
 end
